@@ -1,5 +1,5 @@
 import React from 'react';
-import { FolderOpen, ExternalLink, Github, Youtube } from 'lucide-react';
+import { FolderOpen, ExternalLink, Github, Video } from 'lucide-react';
 
 function Projects() {
   const projects = [
@@ -35,7 +35,7 @@ function Projects() {
       description: "Designed and implemented a relational database for JungleTrailTours, including a UML-based ERD, SQL table creation scripts, and populated datasets. Executed and documented ten SQL queries to demonstrate functionality, ensuring proper use of primary/foreign keys and relationships.",
       liveLink: "",
       githubLink: "https://github.com/Vyishnavan/Coursework-Case-Study-JungleTrailTours-",
-      youtubeLink: "https://www.youtube.com/watch?v=4FH5oxhonYY",
+      videoLink: "https://drive.google.com/file/d/1_IfpQZm_JOzjBsK18uN-jlVZ-hVQvQOU/view",
       image: "/images/Images/DDI.png",
       skills: ["SQL", "Relational Database", "UML", "ERD"]
     },
@@ -164,14 +164,14 @@ function Projects() {
                     <Github size={18} /> GitHub
                   </a>
                 )}
-                {project.youtubeLink && (
+                {project.videoLink && (
                   <a
-                    href={project.youtubeLink}
+                    href={project.videoLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-red-600/80 rounded-full text-white font-semibold hover:bg-red-500 hover:shadow-lg hover:shadow-red-500/30 transition-all hover:scale-105"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600/80 rounded-full text-white font-semibold hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-500/30 transition-all hover:scale-105"
                   >
-                    <Youtube size={18} /> YouTube
+                    <Video size={18} /> Presentations Video
                   </a>
                 )}
               </div>
