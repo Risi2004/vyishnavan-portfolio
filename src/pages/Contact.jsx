@@ -29,23 +29,23 @@ function Contact() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 w-full justify-center">
-            <a href="mailto:vyishnavan@gmail.com" className="flex items-center gap-4 bg-gray-900/80 px-6 py-4 rounded-xl border border-gray-700 hover:border-yellow-400 hover:shadow-lg hover:shadow-yellow-400/20 transition-all group max-w-sm w-full">
+            <a href="mailto:vyishnavan456@gmail.com" className="flex items-center gap-4 bg-gray-900/80 px-6 py-4 rounded-xl border border-gray-700 hover:border-yellow-400 hover:shadow-lg hover:shadow-yellow-400/20 transition-all group max-w-sm w-full">
               <div className="bg-gradient-to-br from-yellow-400 to-orange-500 p-3 rounded-lg text-gray-900 group-hover:scale-110 transition-transform">
                 <Mail size={24} />
               </div>
               <div className="text-left">
                 <p className="text-sm text-gray-400 mb-1">Email Me</p>
-                <p className="font-semibold text-yellow-50 text-sm md:text-base">vyishnavan@gmail.com</p>
+                <p className="font-semibold text-yellow-50 text-sm md:text-base">vyishnavan456@gmail.com</p>
               </div>
             </a>
             
-            <a href="tel:+94770000000" className="flex items-center gap-4 bg-gray-900/80 px-6 py-4 rounded-xl border border-gray-700 hover:border-yellow-400 hover:shadow-lg hover:shadow-yellow-400/20 transition-all group max-w-sm w-full">
+            <a href="tel:0762350001" className="flex items-center gap-4 bg-gray-900/80 px-6 py-4 rounded-xl border border-gray-700 hover:border-yellow-400 hover:shadow-lg hover:shadow-yellow-400/20 transition-all group max-w-sm w-full">
               <div className="bg-gradient-to-br from-yellow-400 to-orange-500 p-3 rounded-lg text-gray-900 group-hover:scale-110 transition-transform">
                 <Phone size={24} />
               </div>
               <div className="text-left">
                 <p className="text-sm text-gray-400 mb-1">Call Me</p>
-                <p className="font-semibold text-yellow-50 text-sm md:text-base">+94 7X XXX XXXX</p>
+                <p className="font-semibold text-yellow-50 text-sm md:text-base">0762350001</p>
               </div>
             </a>
           </div>
@@ -55,7 +55,7 @@ function Contact() {
         <div className="flex justify-center space-x-10 mt-12">
           <SocialLink href="#" icon={<Github size={28} />} label="GitHub" />
           <SocialLink href="#" icon={<Linkedin size={28} />} label="LinkedIn" />
-          <SocialLink href="mailto:vyishnavan@gmail.com" icon={<Mail size={28} />} label="Email" />
+          <SocialLink href="mailto:vyishnavan456@gmail.com" icon={<Mail size={28} />} label="Email" />
         </div>
       </div>
 

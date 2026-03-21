@@ -3,14 +3,13 @@ import {
   ChevronDown, Github, Linkedin, Mail, Download, Briefcase, TrendingUp, Users
 } from 'lucide-react';
 
-function HeroSection() {
-  const roles = [
-    "Business Management Student",
-    "Strategic Planner",
-    "Aspiring Entrepreneur",
-    "Leadership Enthusiast"
-  ];
+const roles = [
+  "Business Analysist",
+  "Prompt Engineer",
+  "Project Manager",
+];
 
+function HeroSection() {
   const [displayText, setDisplayText] = useState('');
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -90,7 +89,7 @@ function HeroSection() {
             <div className="flex space-x-6 animate-fade-in-up">
               <SocialLink href="#" icon={<Github size={24} />} label="GitHub" />
               <SocialLink href="#" icon={<Linkedin size={24} />} label="LinkedIn" />
-              <SocialLink href="mailto:vyishnavan@gmail.com" icon={<Mail size={24} />} label="Email" />
+              <SocialLink href="mailto:vyishnavan456@gmail.com" icon={<Mail size={24} />} label="Email" />
             </div>
           </div>
 

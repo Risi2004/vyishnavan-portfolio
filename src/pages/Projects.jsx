@@ -36,7 +36,7 @@ function Projects() {
       liveLink: "",
       githubLink: "https://github.com/Vyishnavan/Coursework-Case-Study-JungleTrailTours-",
       youtubeLink: "https://www.youtube.com/watch?v=4FH5oxhonYY",
-      image: "/images/udemy.png",
+      image: "/images/Images/DDI.png",
       skills: ["SQL", "Relational Database", "UML", "ERD"]
     },
     {
@@ -81,7 +81,7 @@ function Projects() {
       liveLink: "",
       githubLink: "https://github.com/Vyishnavan/5COSC020W--DATABASE--SYSTEMS--COURSEWORK--INDIVIDUAL-",
       youtubeLink: "",
-      image: "/images/Images/DDI.png",
+      image: "/images/udemy.png",
       skills: ["Database Systems", "EERD", "SQL", "UML"]
     }
   ];

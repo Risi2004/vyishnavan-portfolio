@@ -1,5 +1,5 @@
 import React from 'react';
-import { Presentation, TrendingUp, Trophy, Users, Clock } from 'lucide-react';
+import { Presentation } from 'lucide-react';
 
 function About() {
   return (
@@ -127,16 +127,6 @@ const ContentCard = ({ icon, title, text, pills = [], gradient }) => (
         ))}
       </div>
     )}
-  </div>
-);
-
-const StatCard = ({ icon, number, label }) => (
-  <div className="bg-gray-800/50 p-6 rounded-xl text-center shadow-lg border border-gray-700/40 hover:shadow-yellow-400/10 transition-all hover:-translate-y-1 duration-300">
-    <div className="w-14 h-14 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center mx-auto mb-2 text-white">
-      {icon}
-    </div>
-    <div className="text-2xl font-bold text-white">{number}</div>
-    <div className="text-sm text-gray-400">{label}</div>
   </div>
 );
 
