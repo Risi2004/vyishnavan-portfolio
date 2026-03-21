@@ -98,7 +98,7 @@ function Projects() {
 
       {/* Content */}
       <div className="max-w-6xl mx-auto relative z-10 animate-fade-in-up">
-        {/* Title with padding and margin fix */}
+        {/* Year 1 Title */}
         <div className="text-center mb-16 px-6 overflow-visible">
           <h2
             className="pb-2 text-4xl md:text-5xl font-extrabold mb-4 px-4 tracking-wide bg-gradient-to-r from-yellow-400 via-yellow-300 to-orange-400 bg-clip-text text-transparent"
@@ -109,73 +109,28 @@ function Projects() {
           <div className="w-24 h-1 mx-auto bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full"></div>
         </div>
 
-        {/* Cards */}
+        {/* Year 1 Cards */}
         <div className="grid md:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/40 rounded-2xl p-6 shadow-xl group hover:shadow-yellow-300/10 transition duration-300 transform hover:-translate-y-1 flex flex-col"
-            >
-              {/* Project Image */}
-              {project.image && (
-                <img
-                  src={project.image}
-                  alt={`${project.title} screenshot`}
-                  className="rounded-xl mb-6 object-cover w-full h-48"
-                />
-              )}
+          {projects.slice(0, 7).map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
+        </div>
 
-              {/* Title Row */}
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-all">
-                  <FolderOpen className="text-white" size={24} />
-                </div>
-                <h3 className="ml-4 text-xl font-semibold text-yellow-300 group-hover:text-yellow-400 transition-colors">
-                  {project.title}
-                </h3>
-              </div>
+        {/* Year 2 Title */}
+        <div className="text-center mt-24 mb-16 px-6 overflow-visible">
+          <h2
+            className="pb-2 text-4xl md:text-5xl font-extrabold mb-4 px-4 tracking-wide bg-gradient-to-r from-yellow-400 via-yellow-300 to-orange-400 bg-clip-text text-transparent"
+            style={{ marginLeft: '0.25rem', marginRight: '0.25rem' }}
+          >
+            Year 2 Academic Projects
+          </h2>
+          <div className="w-24 h-1 mx-auto bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full"></div>
+        </div>
 
-              {/* Description */}
-              <p className="text-gray-300 leading-relaxed mb-4 flex-grow">
-                {project.description}
-              </p>
-
-
-
-              {/* Action Buttons */}
-              <div className="flex flex-wrap gap-4 mt-auto">
-                {project.liveLink && (
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full font-semibold bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 shadow-md hover:shadow-yellow-400/30 transition-all hover:scale-105"
-                  >
-                    <ExternalLink size={18} /> Live Demo
-                  </a>
-                )}
-                {project.githubLink && (
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 border-2 border-gray-600 rounded-full text-gray-300 font-semibold hover:border-yellow-400 hover:text-yellow-400 transition-all hover:scale-105"
-                  >
-                    <Github size={18} /> GitHub
-                  </a>
-                )}
-                {project.videoLink && (
-                  <a
-                    href={project.videoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600/80 rounded-full text-white font-semibold hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-500/30 transition-all hover:scale-105"
-                  >
-                    <Video size={18} /> Presentation Video
-                  </a>
-                )}
-              </div>
-            </div>
+        {/* Year 2 Cards */}
+        <div className="grid md:grid-cols-3 gap-8">
+          {projects.slice(7).map((project, index) => (
+            <ProjectCard key={index + 7} project={project} />
           ))}
         </div>
       </div>
@@ -201,5 +156,66 @@ function Projects() {
     </section>
   );
 }
+const ProjectCard = ({ project }) => (
+  <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/40 rounded-2xl p-6 shadow-xl group hover:shadow-yellow-300/10 transition duration-300 transform hover:-translate-y-1 flex flex-col">
+    {/* Project Image */}
+    {project.image && (
+      <img
+        src={project.image}
+        alt={`${project.title} screenshot`}
+        className="rounded-xl mb-6 object-cover w-full h-48"
+      />
+    )}
+
+    {/* Title Row */}
+    <div className="flex items-center mb-4">
+      <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-all">
+        <FolderOpen className="text-white" size={24} />
+      </div>
+      <h3 className="ml-4 text-xl font-semibold text-yellow-300 group-hover:text-yellow-400 transition-colors">
+        {project.title}
+      </h3>
+    </div>
+
+    {/* Description */}
+    <p className="text-gray-300 leading-relaxed mb-4 flex-grow">
+      {project.description}
+    </p>
+
+    {/* Action Buttons */}
+    <div className="flex flex-wrap gap-4 mt-auto">
+      {project.liveLink && (
+        <a
+          href={project.liveLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full font-semibold bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 shadow-md hover:shadow-yellow-400/30 transition-all hover:scale-105"
+        >
+          <ExternalLink size={18} /> Live Demo
+        </a>
+      )}
+      {project.githubLink && (
+        <a
+          href={project.githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-4 py-2 border-2 border-gray-600 rounded-full text-gray-300 font-semibold hover:border-yellow-400 hover:text-yellow-400 transition-all hover:scale-105"
+        >
+          <Github size={18} /> GitHub
+        </a>
+      )}
+      {project.videoLink && (
+        <a
+          href={project.videoLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600/80 rounded-full text-white font-semibold hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-500/30 transition-all hover:scale-105"
+        >
+          <Video size={18} /> Presentation Video
+        </a>
+      )}
+    </div>
+  </div>
+);
 
 export default Projects;
