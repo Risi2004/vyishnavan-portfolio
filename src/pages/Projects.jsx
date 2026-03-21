@@ -72,7 +72,7 @@ function Projects() {
       liveLink: "",
       githubLink: "https://github.com/Vyishnavan/FOODIVERSE-A-Global-Recipe-Sharing-Platform",
       youtubeLink: "",
-      image: "/images/bulkmail.png",
+      image: "/images/Images/FOODIVERSE-A-Global-Recipe-Sharing-Platform (1).png",
       skills: ["System Design", "UML", "GUI", "Teamwork"]
     },
     {
@@ -81,7 +81,7 @@ function Projects() {
       liveLink: "",
       githubLink: "https://github.com/Vyishnavan/5COSC020W--DATABASE--SYSTEMS--COURSEWORK--INDIVIDUAL-",
       youtubeLink: "",
-      image: "/images/udemy.png",
+      image: "/images/Images/5COSC020W--DATABASE--SYSTEMS--COURSEWORK--INDIVIDUAL.png",
       skills: ["Database Systems", "EERD", "SQL", "UML"]
     }
   ];
@@ -171,7 +171,7 @@ function Projects() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600/80 rounded-full text-white font-semibold hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-500/30 transition-all hover:scale-105"
                   >
-                    <Video size={18} /> Presentations Video
+                    <Video size={18} /> Presentation Video
                   </a>
                 )}
               </div>
