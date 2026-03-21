@@ -91,17 +91,16 @@ function HeroSection() {
             </div>
           </div>
 
-          {/* Right Image with Ring - visible only on large screens */}
+          {/* Right Image - visible only on large screens */}
           <div
-            className={`relative w-72 h-72 lg:w-80 lg:h-80 mt-[30px] group transition-all duration-1000 ease-out hidden lg:block ${
+            className={`relative w-80 h-[420px] lg:w-96 lg:h-[520px] mt-[30px] group transition-all duration-1000 ease-out hidden lg:block ${
               showImage ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}
           >
-            <div className="absolute inset-0 rounded-full border-[8px] border-yellow-400 animate-spin-slow border-t-transparent z-0 pointer-events-none blur-sm group-hover:blur-md"></div>
             <img
-              src="/images/profile.jpg"
-              alt="Risikesan"
-              className="relative z-10 w-full h-full object-cover rounded-full border-4 border-gray-900 shadow-xl"
+              src="/images/Images/profile.png"
+              alt="Vyishnavan"
+              className="relative z-10 w-full h-full object-cover object-top rounded-3xl shadow-2xl transition-transform duration-500 hover:scale-[1.02]"
             />
           </div>
         </div>
