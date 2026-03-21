@@ -37,7 +37,7 @@ function HeroSection() {
     }, typeSpeed);
 
     return () => clearTimeout(timeout);
-  }, [charIndex, isDeleting, roleIndex, roles]);
+  }, [charIndex, isDeleting, roleIndex]);
 
   // Delay profile image appearance
   useEffect(() => {
