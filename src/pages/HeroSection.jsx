@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {
-  ChevronDown, Github, Linkedin, Mail, Download, Briefcase, TrendingUp, Users
-} from 'lucide-react';
+import { Github, Linkedin, Mail, Download, Briefcase, TrendingUp, Users } from 'lucide-react';
 
 const roles = [
   "Business Analysist",
@@ -39,7 +37,7 @@ function HeroSection() {
     }, typeSpeed);
 
     return () => clearTimeout(timeout);
-  }, [charIndex, isDeleting, roleIndex]);
+  }, [charIndex, isDeleting, roleIndex, roles]);
 
   // Delay profile image appearance
   useEffect(() => {
