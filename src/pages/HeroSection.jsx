@@ -85,7 +85,7 @@ function HeroSection() {
             </div>
 
             <div className="flex space-x-6 animate-fade-in-up">
-              <SocialLink href="#" icon={<Github size={24} />} label="GitHub" />
+              <SocialLink href="https://github.com/Vyishnavan" icon={<Github size={24} />} label="GitHub" />
               <SocialLink href="#" icon={<Linkedin size={24} />} label="LinkedIn" />
               <SocialLink href="mailto:vyishnavan456@gmail.com" icon={<Mail size={24} />} label="Email" />
             </div>
