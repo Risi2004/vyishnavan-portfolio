@@ -27,7 +27,7 @@ function About() {
         {/* Biography Section */}
         <div className="bg-gray-800/80 backdrop-blur-md rounded-3xl p-12 text-gray-200 text-lg leading-relaxed mb-16 max-w-full mx-auto shadow-lg border border-yellow-500/30">
           <p className="mb-6">
-            👋 <strong className="text-yellow-400">Hi, I'm Sathalogithasiva Vyishnavan</strong>, a passionate Business Management Student.  
+            👋 <strong className="text-yellow-400">Hi, I'm Sathalogithasiva Vyishnavan</strong>, a passionate Business Information System Student.  
             My journey started with a deep curiosity for understanding how organizations work, quickly evolving into a love for <span className="text-orange-400 font-semibold">strategic planning and business growth</span> that makes a difference.
           </p>
 
