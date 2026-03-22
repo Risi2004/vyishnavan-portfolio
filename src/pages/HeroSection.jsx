@@ -3,7 +3,6 @@ import { Github, Linkedin, Mail, Download, Briefcase, TrendingUp, Users } from '
 
 const roles = [
   "Business Analysist",
-  "Prompt Engineer",
   "Project Manager",
   "Database Administrator",
 ];
@@ -87,7 +86,7 @@ function HeroSection() {
 
             <div className="flex space-x-6 animate-fade-in-up">
               <SocialLink href="https://github.com/Vyishnavan" icon={<Github size={24} />} label="GitHub" />
-              <SocialLink href="#" icon={<Linkedin size={24} />} label="LinkedIn" />
+              <SocialLink href="https://www.linkedin.com/in/vyishnavan-sathalogthasiva-317243266/" icon={<Linkedin size={24} />} label="LinkedIn" />
               <SocialLink href="mailto:vyishnavan456@gmail.com" icon={<Mail size={24} />} label="Email" />
             </div>
           </div>

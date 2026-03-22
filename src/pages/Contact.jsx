@@ -54,7 +54,7 @@ function Contact() {
         {/* Animated Social Links Below Form */}
         <div className="flex justify-center space-x-10 mt-12">
           <SocialLink href="https://github.com/Vyishnavan" icon={<Github size={28} />} label="GitHub" />
-          <SocialLink href="#" icon={<Linkedin size={28} />} label="LinkedIn" />
+          <SocialLink href="https://www.linkedin.com/in/vyishnavan-sathalogthasiva-317243266/" icon={<Linkedin size={28} />} label="LinkedIn" />
           <SocialLink href="mailto:vyishnavan456@gmail.com" icon={<Mail size={28} />} label="Email" />
         </div>
       </div>
