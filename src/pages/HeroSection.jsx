@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, Download, Briefcase, TrendingUp, Users } from 'lucide-react';
 
 const roles = [
-  "Business Analysist",
+  "Business Analyst",
   "Project Manager",
   "Database Administrator",
 ];
