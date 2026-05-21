@@ -83,6 +83,15 @@ function Projects() {
       youtubeLink: "",
       image: "/images/Images/5COSC020W--DATABASE--SYSTEMS--COURSEWORK--INDIVIDUAL.png",
       skills: ["Database Systems", "EERD", "SQL", "UML"]
+    },
+    {
+      title: "BIS_Development_HomefixHub",
+      description: "HomeFix Hub is a secure, database-driven web application built with Object-Oriented PHP and MySQL that connects customers with certified home maintenance professionals. Designed for scalability, the platform encapsulates core business logic into reusable classes and features a centralized database management class. Its secure backend administration dashboard provides full CRUD functionality to manage profiles.",
+      liveLink: "",
+      githubLink: "https://github.com/Vyishnavan/BIS_Development_HomefixHub",
+      videoLink: "https://drive.google.com/file/d/1uRgYZ1T2gVG2-0IxjdWdGL75RKY-Cpzq/view?usp=sharing",
+      image: "/images/Images/HomefixHub.png",
+      skills: ["PHP", "MySQL", "OOP", "Database Management"]
     }
   ];
 
