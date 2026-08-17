@@ -5,6 +5,7 @@ const roles = [
   "Business Analyst",
   "Project Manager",
   "Database Administrator",
+  "Digital Marketing",
 ];
 
 function HeroSection() {
